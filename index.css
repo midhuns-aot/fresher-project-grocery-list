@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+
+
+/* Global Styles */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body{
+    background-color:  hsl(210, 36%, 96%);
+    color: hsl(209, 61%, 16%);
+    line-height: 1.5;
+    font-size: 0.875rem;
+    }
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.section {
+    padding: 5rem 0;
+  }
+
+.section-center {
+    width: 90vw;
+    margin: 0 auto;
+    max-width: 35rem;
+    margin-top: 8rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.grocery-form h3{
+    text-align: center;
+}
+
+#grocery {
+    padding: 0.25rem;
+    padding-left: 1rem;
+    border-color: transparent;
+    font-size: 1rem;
+    flex: 1 0 auto;
+}
+.submit-btn {
+    border-color: transparent;
+    flex: 0 0 5rem;
+    display: grid;
+    align-items: center;
+    padding: 0.25rem;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    cursor: pointer;
+    font-size: 0.85rem;
+}
+main {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+  }
+
+
+h1,h2,h3,h4 {
+    letter-spacing: 0.25rem;
+    text-transform: capitalize;
+    line-height: 1.25;
+    margin-bottom: 0.75rem;
+    font-family:"Roboto", sans-serif;
+  }
+  h1 {
+    font-size: 3rem;
+    
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+  h4 {
+    font-size: 0.875rem;
+  }
+  p {
+    margin-bottom: 1.25rem;
+    color: var(--clr-grey-5);
+  }
+
+
+
+
+
+/* Grocery List */
+
+  .section-center {
+    background:  #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s linear;
+    padding: 2rem;
+  }
+
+  .alert {
+    margin-bottom: 1rem;
+    height: 1.25rem;
+    display: grid;
+    align-items: center;
+    text-align: center;
+    font-size: 0.7rem;
+    border-radius: 0.25rem;
+    letter-spacing: 0.25rem;
+    text-transform: capitalize;
+    
+  }
+  .alert-danger {
+    color: #721c24;
+    background: #f8d7da;
+   
+  }
+  .alert-success {
+    color: #155724;
+    background: #d4edda;
+  }
+  .grocery-form h3 {
+    color: hsl(205, 86%, 17%);
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+
+  .grocery-container {
+    margin-top: 2rem;
+    transition: all 0.3s linear;
+    visibility: hidden;
+  }
+
+.show-container {
+  visibility: visible;
+}
+
+.grocery-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+    transition: all 0.3s linear;
+    padding: 0.25rem 1rem;
+    border-radius: 0.5rem;
+    text-transform: capitalize;
+}
+
+
+.delete-btn {
+  cursor: pointer;
+  border: none;
+  background-color: #FFFF;
+  color: hsl(360, 67%, 44%);
+}
+
+.edit-btn{
+    cursor: pointer;
+    border: none;
+    background-color: #FFFF;
+    color: hsl(125, 71%, 66%);
+}
+
+
+#grocery {
+    padding: 0.25rem;
+    padding-left: 1rem;
+    background: hsl(210, 36%, 96%);
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    border-color: transparent;
+    font-size: 1rem;
+    flex: 1 0 auto;
+    color: hsl(210, 22%, 49%);
+  }
+  #grocery::placeholder {
+    font-family:"Open Sans", sans-serif;
+    color: hsl(210, 22%, 49%);
+  }
+
+
+.submit-btn {
+    background:  hsl(205, 86%, 81%);
+    border-color: transparent;
+    flex: 0 0 5rem;
+    display: grid;
+    align-items: center;
+    padding: 0.25rem;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    cursor: pointer;
+    content: #49a6e9;
+    transition: all 0.3s linear;
+    font-size: 0.85rem;
+}
+
+
+  .clear-btn {
+    text-transform: capitalize;
+    width: 10rem;
+    height: 1.5rem;
+    display: grid;
+    align-items: center;
+    background: transparent;
+    border-color: transparent;
+    color: hsl(360, 71%, 66%);
+    margin: 0 auto;
+    font-size: 0.85rem;
+    font-weight: 400;
+    letter-spacing: 0.25rem;
+    cursor: pointer;
+    transition: all 0.3s linear;
+    margin-top: 1.25rem;
+  }
+  .form-control{
+    border: none;
+  }
